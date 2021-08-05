@@ -1,1 +1,102 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+  max-width: 1280px;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  background-image: linear-gradient(#1FA2FF, #12D8FA, #A6FFCB);
+  background-size: 400% 400%;
+  animation: backk 10s infinite;
+  height: 100vh;
+}
+
+@keyframes backk {
+  0% {
+    background-position: 0 30%;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+body .prototype-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+body .prototype-section .container {
+  border-top-left-radius: 45px;
+  border-bottom-right-radius: 45px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: #efefef;
+  box-shadow: 0 0 30px #444;
+  margin: 100px 0 0 0;
+  width: 40%;
+}
+
+body .prototype-section .container .imgmain {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+body .prototype-section .container .imgmain img {
+  width: 55%;
+  border-radius: 50%;
+  border: 3px dotted #7400b8;
+}
+
+body .prototype-section .container .imgmain .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+body .prototype-section .container .imgmain .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+body .prototype-section .container .imgmain .icon-section-social i {
+  font-size: 35px;
+  color: #7400b8;
+  margin: 35px 0 35px 0;
+  transition: all 1s ease-out;
+}
+
+body .prototype-section .container .imgmain .icon-section-social i:hover {
+  color: #444;
+  border-bottom: 1px solid #7400b8;
+}
+
+.personal-main {
+  display: none;
+}
+
+.education-main {
+  display: none;
+}
+
+.habitance-main {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

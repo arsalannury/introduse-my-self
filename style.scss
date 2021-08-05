@@ -1,0 +1,110 @@
+$mar : 'margin' ;
+$padd : 'padding' ;
+$wid : 'width' ;
+$hei : 'height' ;
+$bords : 'border-radius' ;
+$fonts : 'font-size' ;
+@function fontSize($param,$param2){
+     @return $param + $param2 ; 
+};
+@mixin displays($dir,$just,$align,$wrap){
+    display:flex;
+    flex-direction:$dir;
+    justify-content:$just;
+    align-items:$align;
+    flex-wrap:$wrap;
+} ;
+@mixin transition($argumants...) {
+    transition:$argumants;
+} ;
+@mixin shadows($shadows...) {
+    box-shadow:$shadows;
+}
+@mixin animations($anime...) {
+    animation: $anime;
+}
+$colors-main : (
+iconAndBorder : #7400b8 ,
+backgroundCart :  #efefef ,
+);
+*{
+    box-sizing: border-box;
+    max-#{$wid}: 1280px;
+    #{$fonts}: 16px;
+    #{$mar}:0;
+    #{$padd}:0;
+    font-family:cursive;
+};
+body{
+    background-image: linear-gradient( #1FA2FF,#12D8FA,#A6FFCB);
+    background-size: 400% 400%;
+    @include animations(backk 10s infinite);
+    @keyframes backk {
+        0%{background-position:0 30%};
+        50%{background-position: 50% 50%};
+        100%{background-position: 100% 100%;}
+    }
+    #{$hei}: 100vh;
+            .prototype-section{
+            @include displays(row,center,center,nowrap);
+
+
+            .container{
+                border-top-left-radius: 45px;
+                border-bottom-right-radius: 45px;
+                border-top-right-radius: 3px;
+                border-bottom-left-radius: 3px;
+                background-color: map-get($map: $colors-main, $key: backgroundCart) ;
+                @include shadows( 0 0 30px #444);
+                #{$mar}:100px 0 0 0;
+                #{$wid}: 40%;
+
+                
+                .imgmain{
+                    padding: 20px;
+                    @include displays(row,space-between,center,nowrap);
+                    img{
+                        #{$wid}:55%;
+                        #{$bords}:50%;
+                        border: 3px dotted #7400b8 ;
+                    }
+                    .left{
+                       @include displays(column,space-between,center,nowrap);
+                    }
+                    .right{
+                        @include displays(column,space-between,center,nowrap);
+                    }
+                    .icon-section-social{
+                        i{
+                            #{$fonts}:35px;
+                            color: map-get($map: $colors-main, $key: iconAndBorder );
+                            #{$mar}:35px 0 35px 0;
+                            @include transition(all 1s ease-out) ;
+                            &:hover{
+                            color: #444;
+                            border-bottom: 1px solid map-get($map: $colors-main, $key: iconAndBorder );
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+}
+
+
+
+
+
+
+
+
+.personal-main{
+    display: none;
+}
+.education-main{
+    display: none;
+}
+.habitance-main{
+    display: none;
+}
