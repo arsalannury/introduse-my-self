@@ -41,7 +41,7 @@ body .prototype-section .container {
   border-bottom-left-radius: 3px;
   background-color: #efefef;
   box-shadow: 0 0 30px #444;
-  margin: 100px 0 0 0;
+  margin: 80px 0 0 0;
   width: 40%;
 }
 
@@ -88,15 +88,153 @@ body .prototype-section .container .imgmain .icon-section-social i:hover {
   border-bottom: 1px solid #7400b8;
 }
 
-.personal-main {
-  display: none;
+body .prototype-section .container .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 
-.education-main {
-  display: none;
+body .prototype-section .container .description h1 {
+  font-size: 2em;
+  margin: 0 0 5px 0;
 }
 
-.habitance-main {
+body .prototype-section .container .description h1::first-letter {
+  color: #7400b8;
+}
+
+body .prototype-section .container .description P {
+  font-size: 0.8em;
+  margin: 0 0 15px 0;
+}
+
+body .prototype-section .container .description .navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  list-style-type: none;
+  margin: 0 13px 10px 0;
+}
+
+body .prototype-section .container .description .navigation ul .personal-information {
+  position: relative;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+body .prototype-section .container .description .navigation ul .personal-information:hover {
+  color: #7400b8;
+}
+
+body .prototype-section .container .description .navigation ul .personal-information:hover .personal-main {
+  display: block;
+}
+
+body .prototype-section .container .description .navigation ul .personal-main {
   display: none;
+  position: absolute;
+  top: 20px;
+  left: -17px;
+  width: 120%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+body .prototype-section .container .description .navigation ul .personal-main .personal {
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 1px;
+  text-align: center;
+  font-size: .9em;
+  border-radius: 5px;
+  color: #000;
+  transition: all 0.6s ease;
+}
+
+body .prototype-section .container .description .navigation ul .personal-main .personal:hover {
+  color: #fff;
+  background-color: #7400b8;
+}
+
+body .prototype-section .container .description .navigation ul .education-information {
+  padding: 0 10px 0 0;
+  position: relative;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+}
+
+body .prototype-section .container .description .navigation ul .education-information:hover .education-main {
+  display: block;
+}
+
+body .prototype-section .container .description .navigation ul .education-main {
+  display: none;
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -30px;
+  width: 120%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+body .prototype-section .container .description .navigation ul .education-main .education {
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 1px;
+  text-align: center;
+  font-size: .9em;
+  border-radius: 5px;
+  color: #000;
+  transition: all 0.6s ease;
+}
+
+body .prototype-section .container .description .navigation ul .education-main .education:hover {
+  color: #fff;
+  background-color: #7400b8;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-place-information {
+  position: relative;
+  cursor: pointer;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-place-information:hover .habitance-main {
+  display: block;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-main {
+  display: none;
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: -100px;
+  width: 200%;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #efefef;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-main .habitance {
+  transition: all 0.6s ease;
+  cursor: pointer;
+  margin: 10px 0 0 0;
+  padding: 1px;
+  text-align: center;
+  font-size: .9em;
+  border-radius: 5px;
+  color: #000;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-main .habitance:hover {
+  color: #fff;
+  background-color: #7400b8;
 }
 /*# sourceMappingURL=style.css.map */
