@@ -32,6 +32,7 @@ body .prototype-section {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  position: relative;
 }
 
 body .prototype-section .container {
@@ -121,6 +122,7 @@ body .prototype-section .container .description .navigation ul {
 }
 
 body .prototype-section .container .description .navigation ul .personal-information {
+  z-index: 1;
   position: relative;
   padding: 0 10px 0 0;
   cursor: pointer;
@@ -163,6 +165,7 @@ body .prototype-section .container .description .navigation ul .personal-main .p
 }
 
 body .prototype-section .container .description .navigation ul .education-information {
+  z-index: 1;
   padding: 0 10px 0 0;
   position: relative;
   padding: 0 10px 0 0;
@@ -236,5 +239,99 @@ body .prototype-section .container .description .navigation ul .habitance-main .
 body .prototype-section .container .description .navigation ul .habitance-main .habitance:hover {
   color: #fff;
   background-color: #7400b8;
+}
+
+body .prototype-section .anime {
+  left: 1px;
+  color: #7400b8;
+  position: absolute;
+  top: 10px;
+  font-size: 1.3em;
+  animation: move 10s infinite ease;
+  transition: all 1s ease;
+}
+
+body .prototype-section .anime:hover {
+  font-size: 1.5em;
+}
+
+@keyframes move {
+  0% {
+    left: 1%;
+  }
+  10% {
+    left: 6%;
+  }
+  20% {
+    left: 10%;
+  }
+  30% {
+    left: 20%;
+  }
+  40% {
+    left: 30%;
+  }
+  50% {
+    left: 40%;
+  }
+  60% {
+    left: 50%;
+  }
+  70% {
+    left: 60%;
+  }
+  80% {
+    left: 70%;
+  }
+  90% {
+    left: 84%;
+  }
+}
+
+body .prototype-section .anime2 {
+  right: 1px;
+  color: #ff7d00;
+  position: absolute;
+  top: 116%;
+  font-size: 1.4em;
+  animation: move2 10s infinite ease;
+  transition: all 1s ease;
+}
+
+body .prototype-section .anime2:hover {
+  font-size: 1.6em;
+}
+
+@keyframes move2 {
+  0% {
+    right: 1%;
+  }
+  10% {
+    right: 6%;
+  }
+  20% {
+    right: 10%;
+  }
+  30% {
+    right: 20%;
+  }
+  40% {
+    right: 30%;
+  }
+  50% {
+    right: 40%;
+  }
+  60% {
+    right: 50%;
+  }
+  70% {
+    right: 60%;
+  }
+  80% {
+    right: 70%;
+  }
+  90% {
+    right: 84%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

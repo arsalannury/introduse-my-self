@@ -47,6 +47,12 @@ $fonts : 'font-size' ;
     #{$bords}:5px;
     color:#000;
 }
+@mixin anime-style($color,$top,$size) {
+    color:$color;
+    position: absolute;
+    top:$top;
+    #{$fonts}:$size;
+}
 $colors-main : (
 iconAndBorder : #7400b8 ,
 backgroundCart :  #efefef ,
@@ -71,6 +77,7 @@ body{
     #{$hei}: 100vh;
             .prototype-section{
             @include displays(row,center,center,nowrap);
+            position: relative;
 
 
             .container{
@@ -134,6 +141,7 @@ body{
                         #{$mar}:0 13px 10px 0;
 
                         .personal-information{
+                        z-index: 1;
                         @include information();
                         @include transition(all .6s ease);
                         &:hover{
@@ -156,6 +164,7 @@ body{
                         }
 
                         .education-information{
+                            z-index: 1;
                             #{$padd}:0 10px 0 0;
                             @include information();
                             &:hover{
@@ -202,9 +211,56 @@ body{
 
                 }
             }
+            .anime{
+                left:1px;
+                @include anime-style(map-get($map: $colors-main, $key: iconAndBorder),10px,1.3em);
+                @include animations(move 10s infinite ease);
+                @include transition(all 1s ease);
+                &:hover{
+                    #{$fonts}:1.5em;
+                }
+                @keyframes move {
+                    0%{left:1%;};
+                    10%{left:6%;};
+                    20%{left:10%;};
+                    30%{left:20%;};
+                    40%{left:30%;};
+                    50%{left:40%;};
+                    60%{left:50%;};
+                    70%{left:60%;};
+                    80%{left:70%;};
+                    90%{left:84%;};
+                    
+
+                }
+            }
+            .anime2{
+                right:1px;
+                @include anime-style(#ff7d00,116%,1.4em);
+                @include animations(move2 10s infinite ease);
+                @include transition(all 1s ease);
+                &:hover{
+                    #{$fonts}:1.6em;
+                }
+                @keyframes move2 {
+                    0%{right:1%;};
+                    10%{right:6%;};
+                    20%{right:10%;};
+                    30%{right:20%;};
+                    40%{right:30%;};
+                    50%{right:40%;};
+                    60%{right:50%;};
+                    70%{right:60%;};
+                    80%{right:70%;};
+                    90%{right:84%;};
+                    
+                }
+            }
         }
     
 }
+
+    
 
 
 
