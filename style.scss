@@ -89,7 +89,6 @@ body{
                 @include shadows( 0 0 30px #444);
                 #{$mar}:80px 0 0 0;
                 #{$wid}: 40%;
-
                 
                 .imgmain{
                     padding: 20px;
@@ -167,7 +166,9 @@ body{
                             z-index: 1;
                             #{$padd}:0 10px 0 0;
                             @include information();
+                            @include transition(all .6s ease);
                             &:hover{
+                                color: map-get($map: $colors-main, $key:iconAndBorder );
                                 .education-main{
                                     display: block;
                                 }
@@ -188,7 +189,9 @@ body{
                         .habitance-place-information{
                             position: relative;
                             cursor: pointer;
+                            @include transition(all .6s ease);
                             &:hover{
+                                color: map-get($map: $colors-main, $key:iconAndBorder );
                                 .habitance-main{
                                     display: block;
                                 }
@@ -259,7 +262,7 @@ body{
         }
     
 }
-
+// responsive with media Query
     
 
 

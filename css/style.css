@@ -170,6 +170,11 @@ body .prototype-section .container .description .navigation ul .education-inform
   position: relative;
   padding: 0 10px 0 0;
   cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+body .prototype-section .container .description .navigation ul .education-information:hover {
+  color: #7400b8;
 }
 
 body .prototype-section .container .description .navigation ul .education-information:hover .education-main {
@@ -207,6 +212,11 @@ body .prototype-section .container .description .navigation ul .education-main .
 body .prototype-section .container .description .navigation ul .habitance-place-information {
   position: relative;
   cursor: pointer;
+  transition: all 0.6s ease;
+}
+
+body .prototype-section .container .description .navigation ul .habitance-place-information:hover {
+  color: #7400b8;
 }
 
 body .prototype-section .container .description .navigation ul .habitance-place-information:hover .habitance-main {
