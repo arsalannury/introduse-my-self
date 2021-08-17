@@ -345,6 +345,114 @@ body .prototype-section .anime2:hover {
   }
 }
 
+@media screen and (min-width: 836px) and (max-width: 1194px) {
+  body .prototype-section .container {
+    margin: 10% 0 0 0;
+    width: 56%;
+  }
+  body .prototype-section .container .imgmain img {
+    width: 43%;
+  }
+  body .prototype-section .container .imgmain .icon-section-social i {
+    font-size: 32px;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -2px;
+    width: 200%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    width: 190%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .habitance-place-information .habitance-main {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -225px;
+    width: 300%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .anime {
+    color: #7400b8;
+    position: absolute;
+    top: 40px;
+    font-size: 1.3em;
+  }
+  @keyframes move {
+    0% {
+      left: 1%;
+    }
+    10% {
+      left: 6%;
+    }
+    20% {
+      left: 10%;
+    }
+    30% {
+      left: 20%;
+    }
+    40% {
+      left: 30%;
+    }
+    50% {
+      left: 40%;
+    }
+    60% {
+      left: 50%;
+    }
+    70% {
+      left: 75%;
+    }
+  }
+  body .prototype-section .anime2 {
+    color: #ff7d00;
+    position: absolute;
+    top: 104%;
+    font-size: 1.4em;
+  }
+  @keyframes move2 {
+    0% {
+      right: 1%;
+    }
+    10% {
+      right: 6%;
+    }
+    20% {
+      right: 10%;
+    }
+    30% {
+      right: 20%;
+    }
+    40% {
+      right: 30%;
+    }
+    50% {
+      right: 40%;
+    }
+    60% {
+      right: 50%;
+    }
+    70% {
+      right: 75%;
+    }
+  }
+}
+
 @media screen and (min-width: 601px) and (max-width: 835px) {
   body .prototype-section .container {
     margin: 10% 0 0 0;

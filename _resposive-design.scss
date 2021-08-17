@@ -54,7 +54,74 @@ $fonts : 'font-size' ;
     #{$fonts}:$size;
 }
 
-
+@media screen and (min-width:836px) and (max-width:1194px){
+    body{
+        .prototype-section{
+            .container{
+                #{$mar}:10% 0 0 0;
+                #{$wid}: 56%;
+                .imgmain{
+                    img{
+                        #{$wid}:43%;
+                    }
+                    .icon-section-social{
+                        i{
+                            #{$fonts}:32px;
+                        }
+                    }
+                }
+                .description{
+                    .navigation{
+                        ul{
+                            .personal-information{
+                                .personal-main{
+                                 @include mainsStyle(20px,-2px,200%,15px)
+                                }
+                            }
+                            .education-information{
+                                .education-main{
+                                    @include mainsStyle(20px,-90px,190%,15px)
+                                }
+                            }
+                            .habitance-place-information{
+                                .habitance-main{
+                                    z-index:10;
+                                    @include mainsStyle(20px,-225px,300%,15px)
+                                }
+                            }
+                        }
+                    }
+                 }
+            }
+            .anime{
+                @include anime-style(map-get($map: $colors-main, $key: iconAndBorder),40px,1.3em);
+                @keyframes move {
+                    0%{left:1%;};
+                    10%{left:6%;};
+                    20%{left:10%;};
+                    30%{left:20%;};
+                    40%{left:30%;};
+                    50%{left:40%;};
+                    60%{left:50%;};
+                    70%{left:75%;};
+                }
+            }
+            .anime2{
+                @include anime-style(#ff7d00,104%,1.4em);
+                @keyframes move2 {
+                    0%{right:1%;};
+                    10%{right:6%;};
+                    20%{right:10%;};
+                    30%{right:20%;};
+                    40%{right:30%;};
+                    50%{right:40%;};
+                    60%{right:50%;};
+                    70%{right:75%;};
+                }
+            }
+        }
+    }
+}
 @media screen and (min-width:601px) and (max-width:835px){
     body{
         .prototype-section{
