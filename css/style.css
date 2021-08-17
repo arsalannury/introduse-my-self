@@ -344,4 +344,341 @@ body .prototype-section .anime2:hover {
     right: 84%;
   }
 }
+
+@media screen and (min-width: 601px) and (max-width: 835px) {
+  body .prototype-section .container {
+    margin: 10% 0 0 0;
+    width: 80%;
+  }
+  body .prototype-section .container .imgmain img {
+    width: 37%;
+  }
+  body .prototype-section .container .imgmain .icon-section-social i {
+    font-size: 32px;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -2px;
+    width: 200%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -90px;
+    width: 190%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .habitance-place-information .habitance-main {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -225px;
+    width: 300%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .anime {
+    color: #7400b8;
+    position: absolute;
+    top: 15px;
+    font-size: 1.3em;
+  }
+  @keyframes move {
+    0% {
+      left: 1%;
+    }
+    10% {
+      left: 6%;
+    }
+    20% {
+      left: 10%;
+    }
+    30% {
+      left: 20%;
+    }
+    40% {
+      left: 30%;
+    }
+    50% {
+      left: 40%;
+    }
+    60% {
+      left: 50%;
+    }
+    70% {
+      left: 55%;
+    }
+  }
+  body .prototype-section .anime2 {
+    color: #ff7d00;
+    position: absolute;
+    top: 106%;
+    font-size: 1.4em;
+  }
+  @keyframes move2 {
+    0% {
+      right: 1%;
+    }
+    10% {
+      right: 6%;
+    }
+    20% {
+      right: 10%;
+    }
+    30% {
+      right: 20%;
+    }
+    40% {
+      right: 30%;
+    }
+    50% {
+      right: 40%;
+    }
+    60% {
+      right: 50%;
+    }
+    70% {
+      right: 55%;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 600px) {
+  body .prototype-section .container {
+    margin: 15% 0 0 0;
+    width: 73%;
+  }
+  body .prototype-section .container .imgmain img {
+    width: 50%;
+  }
+  body .prototype-section .container .imgmain .icon-section-social i {
+    font-size: 30px;
+  }
+  body .prototype-section .container .description p {
+    display: none;
+  }
+  body .prototype-section .container .description .navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 90px;
+    margin: 0 0 0 0;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information {
+    padding: 0;
+    z-index: 10;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main {
+    border: 1px solid #7400b8;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -125px;
+    width: 260%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main .personal {
+    margin: 5px 0 0 0;
+  }
+  body .prototype-section .container .description .navigation ul .education-information {
+    padding: 0;
+    z-index: 9;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -120px;
+    width: 240%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    border: 1px solid #7400b8;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main .education {
+    margin: 5px 0 0 0;
+  }
+  body .prototype-section .container .description .navigation ul .habitance-place-information {
+    z-index: 8;
+  }
+  body .prototype-section .container .description .navigation ul .habitance-place-information .habitance-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -145px;
+    width: 340%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    border: 1px solid #7400b8;
+  }
+  body .prototype-section .anime {
+    color: #7400b8;
+    position: absolute;
+    top: 25px;
+    font-size: 1.3em;
+    animation: move 10s infinite ease;
+  }
+  body .prototype-section .anime:hover {
+    font-size: 1.5em;
+  }
+  @keyframes move {
+    0% {
+      left: 1%;
+    }
+    10% {
+      left: 6%;
+    }
+    20% {
+      left: 10%;
+    }
+    30% {
+      left: 20%;
+    }
+    40% {
+      left: 30%;
+    }
+    50% {
+      left: 40%;
+    }
+    60% {
+      left: 50%;
+    }
+    70% {
+      left: 55%;
+    }
+  }
+  body .prototype-section .anime2 {
+    color: #ff7d00;
+    position: absolute;
+    top: 103%;
+    font-size: 1.4em;
+    animation: move2 10s infinite ease;
+  }
+  body .prototype-section .anime2:hover {
+    font-size: 1.6em;
+  }
+  @keyframes move2 {
+    0% {
+      right: 1%;
+    }
+    10% {
+      right: 6%;
+    }
+    20% {
+      right: 10%;
+    }
+    30% {
+      right: 20%;
+    }
+    40% {
+      right: 30%;
+    }
+    50% {
+      right: 40%;
+    }
+    60% {
+      right: 50%;
+    }
+    70% {
+      right: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body .prototype-section .container {
+    margin: 25px 0 0 0;
+    width: 80%;
+  }
+  body .prototype-section .container .imgmain img {
+    width: 47%;
+  }
+  body .prototype-section .container .imgmain .icon-section-social i {
+    font-size: 30px;
+  }
+  body .prototype-section .container .description h1 {
+    font-size: 1.5em;
+  }
+  body .prototype-section .container .description p {
+    display: none;
+  }
+  body .prototype-section .container .description .navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 90px;
+    margin: 0 0 1px 0;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information {
+    padding: 0;
+    z-index: 10;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main {
+    border: 1px solid #7400b8;
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -49.5px;
+    width: 163%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+  }
+  body .prototype-section .container .description .navigation ul .personal-information .personal-main .personal {
+    margin: 5px 0 0 0;
+  }
+  body .prototype-section .container .description .navigation ul .education-information {
+    padding: 0;
+    z-index: 9;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -43.5px;
+    width: 152%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    border: 1px solid #7400b8;
+  }
+  body .prototype-section .container .description .navigation ul .education-information .education-main .education {
+    margin: 5px 0 0 0;
+  }
+  body .prototype-section .container .description .navigation ul .habitance-place-information .habitance-main {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -69px;
+    width: 210%;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #efefef;
+    border: 1px solid #7400b8;
+    height: 80px;
+  }
+  .anime {
+    display: none;
+  }
+  .anime2 {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

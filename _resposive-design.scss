@@ -1,0 +1,303 @@
+$mar : 'margin' ;
+$padd : 'padding' ;
+$wid : 'width' ;
+$hei : 'height' ;
+$bords : 'border-radius' ;
+$fonts : 'font-size' ;
+@function fontSize($param,$param2){
+     @return $param + $param2 ; 
+};
+@mixin displays($dir,$just,$align,$wrap){
+    display:flex;
+    flex-direction:$dir;
+    justify-content:$just;
+    align-items:$align;
+    flex-wrap:$wrap;
+} ;
+@mixin transition($argumants...) {
+    transition:$argumants;
+} ;
+@mixin shadows($shadows...) {
+    box-shadow:$shadows;
+}
+@mixin animations($anime...) {
+    animation: $anime;
+}
+@mixin information() {
+    position: relative;
+    #{$padd}:0 10px 0 0;
+    cursor: pointer;
+}
+@mixin mainsStyle($top,$left,$width,$padding){
+    display: none;
+    position: absolute;
+    top: $top;
+    left:$left;
+    #{$wid}:$width;
+    #{$padd}:$padding;
+    #{$bords}:5px;
+    background-color: map-get($map: $colors-main, $key: backgroundCart);
+}
+@mixin item-text-style {
+    cursor: pointer;
+    #{$mar}:10px 0 0 0 ;
+    #{$padd}:1px;
+    text-align: center;
+    #{$fonts}:.9em;
+    #{$bords}:5px;
+    color:#000;
+}
+@mixin anime-style($color,$top,$size) {
+    color:$color;
+    position: absolute;
+    top:$top;
+    #{$fonts}:$size;
+}
+
+
+@media screen and (min-width:601px) and (max-width:835px){
+    body{
+        .prototype-section{
+            .container{
+                #{$mar}:10% 0 0 0;
+                #{$wid}: 80%;
+                .imgmain{
+                    img{
+                        #{$wid}:37%;
+                    }
+                    .icon-section-social{
+                        i{
+                            #{$fonts}:32px;
+                        }
+                    }
+                }
+                .description{
+                   .navigation{
+                       ul{
+                           .personal-information{
+                               .personal-main{
+                                @include mainsStyle(20px,-2px,200%,15px)
+                               }
+                           }
+                           .education-information{
+                               .education-main{
+                                   @include mainsStyle(20px,-90px,190%,15px)
+                               }
+                           }
+                           .habitance-place-information{
+                               .habitance-main{
+                                   z-index:10;
+                                   @include mainsStyle(20px,-225px,300%,15px)
+                               }
+                           }
+                       }
+                   }
+                }
+            }
+              .anime{
+                @include anime-style(map-get($map: $colors-main, $key: iconAndBorder),15px,1.3em);
+                @keyframes move {
+                    0%{left:1%;};
+                    10%{left:6%;};
+                    20%{left:10%;};
+                    30%{left:20%;};
+                    40%{left:30%;};
+                    50%{left:40%;};
+                    60%{left:50%;};
+                    70%{left:55%;};
+                }
+            }
+            .anime2{
+                @include anime-style(#ff7d00,106%,1.4em);
+                @keyframes move2 {
+                    0%{right:1%;};
+                    10%{right:6%;};
+                    20%{right:10%;};
+                    30%{right:20%;};
+                    40%{right:30%;};
+                    50%{right:40%;};
+                    60%{right:50%;};
+                    70%{right:55%;};
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:481px) and (max-width:600px){
+    body{
+        .prototype-section{
+            .container{
+                #{$mar}:15% 0 0 0;
+                #{$wid}: 73%;
+                .imgmain{
+                    img{
+                        #{$wid}:50%;
+                    }
+                    .icon-section-social{
+                        i{
+                            #{$fonts}:30px;
+                        }
+                    }
+                }
+
+                .description{
+                    p{
+                        display:none;
+                    }
+                    .navigation{
+                        ul{
+                            @include displays(column,space-evenly,center,nowrap);
+                            height:90px;
+                            #{$mar}:0 0 0 0;
+                               .personal-information{
+                            #{$padd}:0;
+                            z-index: 10;
+                           .personal-main{
+                                  border:1px solid #7400b8;
+                               @include mainsStyle(20px,-125px,260%,5px);
+                               
+                             .personal{
+                                #{$mar}:5px 0 0 0 ;
+                             }
+                           }
+                        }
+
+                        .education-information{
+                            #{$padd}:0;
+                            z-index: 9;
+                            .education-main{
+                                @include mainsStyle(20px,-120px,240%,5px);
+                                border:1px solid #7400b8;
+                                .education{
+                                    #{$mar}:5px 0 0 0;
+                                }
+                            }
+                        }
+                        .habitance-place-information{
+                            z-index: 8;
+                            .habitance-main{
+                                @include mainsStyle(20px,-145px,340%,5px);
+                                border:1px solid #7400b8;
+                              
+                            }
+                        }
+                        }
+                    }
+                }
+            }
+
+
+            .anime{
+                @include anime-style(map-get($map: $colors-main, $key: iconAndBorder),25px,1.3em);
+                @include animations(move 10s infinite ease);
+                &:hover{
+                    #{$fonts}:1.5em;
+                }
+                @keyframes move {
+                    0%{left:1%;};
+                    10%{left:6%;};
+                    20%{left:10%;};
+                    30%{left:20%;};
+                    40%{left:30%;};
+                    50%{left:40%;};
+                    60%{left:50%;};
+                    70%{left:55%;};
+                }
+            }
+            .anime2{
+                @include anime-style(#ff7d00,103%,1.4em);
+                @include animations(move2 10s infinite ease);
+                &:hover{
+                    #{$fonts}:1.6em;
+                }
+                @keyframes move2 {
+                    0%{right:1%;};
+                    10%{right:6%;};
+                    20%{right:10%;};
+                    30%{right:20%;};
+                    40%{right:30%;};
+                    50%{right:40%;};
+                    60%{right:50%;};
+                    70%{right:55%;};
+                }
+            }
+
+            
+        }
+    }
+   
+}
+@media screen and (max-width:480px){
+body{
+    .prototype-section{
+        .container{
+            #{$mar}:25px 0 0 0;
+            #{$wid}: 80%;
+
+            .imgmain{
+                img{
+                    #{$wid}:47%;
+                }
+                .icon-section-social{
+                    i{
+                        #{$fonts}:30px;
+                    }
+                }
+            }
+            .description{
+                h1{
+                    #{$fonts}:1.5em;
+                }
+                p{
+                  display: none;
+                }
+                .navigation{
+                    ul{
+                        @include displays(column,space-evenly,center,nowrap);
+                        height:90px;
+                        #{$mar}:0 0 1px 0;
+                        .personal-information{
+                            #{$padd}:0;
+                            z-index: 10;
+                           .personal-main{
+                                  border:1px solid #7400b8;
+                               @include mainsStyle(20px,-49.5px,163%,5px);
+                               
+                             .personal{
+                                #{$mar}:5px 0 0 0 ;
+                             }
+                           }
+                        }
+
+                        .education-information{
+                            #{$padd}:0;
+                            z-index: 9;
+                            .education-main{
+                                @include mainsStyle(20px,-43.5px,152%,5px);
+                                border:1px solid #7400b8;
+                                .education{
+                                    #{$mar}:5px 0 0 0;
+                                }
+                            }
+                        }
+                        .habitance-place-information{
+                            .habitance-main{
+                                @include mainsStyle(20px,-69px,210%,5px);
+                                border:1px solid #7400b8;
+                                #{$hei}:80px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+    .anime{
+        display: none;
+    }
+    .anime2{
+        display: none;
+    }
+}
